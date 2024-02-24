@@ -1,0 +1,97 @@
+body {
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1A2B33;
+    color: white;
+}
+
+.start-ui {
+    display: block;
+}
+
+.start-ui.closed {
+    display: none;
+}
+
+.start-ui form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.start, .restart {
+    width: 150px;
+    align-self: center;
+    background-color: #A9BEC8;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+
+}
+
+.board-cell {
+    border: solid 1px #A9BEC8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-board {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: solid 1px #A9BEC8;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.restart {
+    margin-top: 10px;
+}
+
+.play-game.off {
+    display: none;
+}
+
+.play-game {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.player-one, .player-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restart.off {
+    display: none;
+}
+
+.game-board.off {
+    display: none;
+}
+
+.game-in-progess.off {
+    display: none;
+}
+
+.game-end.off {
+    display: none;
+}
+
+.game-end {
+    display: block;
+}
+
+.game-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
